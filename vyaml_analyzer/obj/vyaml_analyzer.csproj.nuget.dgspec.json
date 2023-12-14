@@ -40,6 +40,20 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "consoleappframework": {
+              "target": "Package",
+              "version": "[4.2.4, )"
+            },
+            "processX": {
+              "target": "Package",
+              "version": "[1.5.5, )"
+            },
+            "vyaml": {
+              "target": "Package",
+              "version": "[0.20.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -12,4 +12,7 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\mattun\.nuget\packages\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)consoleappframework\4.2.4\build\net6.0\ConsoleAppFramework.props" Condition="Exists('$(NuGetPackageRoot)consoleappframework\4.2.4\build\net6.0\ConsoleAppFramework.props')" />
+  </ImportGroup>
 </Project>
